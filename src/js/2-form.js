@@ -1,6 +1,6 @@
 let formData = { email: '', message: '' };
 
-const loginForm = document.querySelector('.login-form');
+const loginForm = document.querySelector('.feedback-form');
 const localStorageKey = 'feedback-form-state';
 const savedData = localStorage.getItem(localStorageKey);
 if (savedData) {
