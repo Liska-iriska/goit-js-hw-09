@@ -17,7 +17,7 @@ loginForm.addEventListener('input', evt => {
 loginForm.addEventListener('submit', event => {
   event.preventDefault();
 
-  if (!formData.email === '' || !formData.message === '') {
+  if (!formData.email || !formData.message) {
     alert('Fill please all fields');
     return;
   }
